@@ -95,9 +95,39 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.blogList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10vw;
+  list-style: none;
+}
+
+.blogListPage, .blogListImage {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.blogList > ul{
+  list-style: none;
+}
+
+.header, .footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  background-color: slategray;
+}
+
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:hover{
+  text-decoration-line: underline;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,7 +1,11 @@
+import Link from "next/link";
+
 function Header() {
     return (
-        <header>
-            <h1>My Blog</h1>
+        <header className= "header">
+            <Link href={`/home`}>
+                <h1>My Blog</h1>
+            </Link>
         </header>
     );
 }

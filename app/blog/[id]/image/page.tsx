@@ -3,7 +3,8 @@ import Image from 'next/image'
 
 export default function BlogImagePage({ params }: { params: { id: string } }) {
     return (
-        <div>
+        <div className="blogListImage">
+            <BlogList />
             <h1>Blog - {params.id} (Image)</h1>
             <Image
                 src={`https://picsum.photos/seed/${params.id}/640/360`}
@@ -11,7 +12,6 @@ export default function BlogImagePage({ params }: { params: { id: string } }) {
                 width={640}
                 height={360}
             />
-            <BlogList />
         </div>
     )
 }

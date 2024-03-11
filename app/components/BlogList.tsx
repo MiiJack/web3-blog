@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import "../globals.css"
 
 const blogs = [
     { id: 1, title: 'Blog 1' },
@@ -14,7 +15,7 @@ const blogs = [
 
 export default function BlogList() {
     return (
-        <div>
+        <div className="blogList">
             <h2>Blog List</h2>
             <ul>
                 {blogs.map((blog) => (
